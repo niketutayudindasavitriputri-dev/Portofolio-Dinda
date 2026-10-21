@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritik & Saran - Dinda</title>
+    
+    <!-- CSS EKSTERNAL -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGASI ATAS -->
+    <header id="header">
+        <div class="navbar">
+            <a href="index.html" class="logo">Portofolio<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="skill.html">SKILL & PROFIL</a></li>
+                <li><a href="kontak.html">KONTAK</a></li>
+                <li><a href="masukan.html" class="active">MASUKAN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="animasi-fade">
+
+        <section>
+            <h2>Formulir Kritik & Saran</h2>
+            <p class="deskripsi-halaman">
+                Punya masukan, saran pengembangan, atau tanggapan mengenai website ini? Silakan isi formulir di bawah ini.
+            </p>
+
+            <div class="form-container">
+                <form action="#" method="POST" onsubmit="return false;">
+                    
+                    <div class="form-group">
+                        <label for="nama_pengirim">Nama Lengkap</label>
+                        <input type="text" id="nama_pengirim" name="nama" placeholder="Masukkan nama kamu..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email_pengirim">Email Kamu</label>
+                        <input type="email" id="email_pengirim" name="email" placeholder="contoh: nama@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kategori">Kategori Masukan</label>
+                        <select id="kategori" name="kategori">
+                            <option value="saran">Saran Tampilan / Desain</option>
+                            <option value="kritik">Kritik & Perbaikan</option>
+                            <option value="diskusi">Ajak Diskusi / Proyek</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan_masukan">Kritik & Saran</label>
+                        <textarea id="pesan_masukan" name="pesan" rows="5" placeholder="Tuliskan kritik dan saran kamu secara detail di sini..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-kirim">Kirim Masukan &rarr;</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ni Ketut Ayu Dinda Savitri Putri. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
